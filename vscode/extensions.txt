@@ -1,0 +1,13 @@
+angular.ng-template
+burkeholland.simple-react-snippets
+dracula-theme.theme-dracula
+esbenp.prettier-vscode
+github.copilot-chat
+ms-dotnettools.csdevkit
+ms-dotnettools.csharp
+ms-dotnettools.vscode-dotnet-runtime
+ms-vscode-remote.remote-containers
+ms-vscode.vscode-typescript-next
+mvllow.rose-pine
+openai.chatgpt
+vscodevim.vim

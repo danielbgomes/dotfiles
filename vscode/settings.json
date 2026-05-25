@@ -1,0 +1,75 @@
+{
+  "editor.fontFamily": "'JetBrains Mono', Consolas, 'Courier New', monospace",
+  "workbench.colorTheme": "Dark Modern",
+  "editor.minimap.enabled": false,
+  // Relative line numbers
+  "editor.lineNumbers": "relative",
+
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // Enable Vim to control Ctrl+C
+  "vim.handleKeys": {
+    "<C-p>": false,
+    "<C-w>": false,
+    "<C-k>": false
+  },
+  // Disable Ctrl+C in insert mode (<Nop>)
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["<C-c>"],
+      "commands": []
+    },
+    // jk → Esc
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // Centers cursor after half-page scroll and search navigation
+    {
+      "before": ["<C-d>"],
+      "after": ["<C-d>", "z", "z"]
+    },
+    // Centers cursor after half-page scroll and search navigation
+    {
+      "before": ["<C-u>"],
+      "after": ["<C-u>", "z", "z"]
+    },
+    // Centers cursor after search navigation
+    {
+      "before": ["n"],
+      "after": ["n", "z", "z", "z", "v"]
+    },
+    // Centers cursor after search navigation
+    {
+      "before": ["N"],
+      "after": ["N", "z", "z", "z", "v"]
+    }
+  ],
+  // Equivalent to: set timeoutlen=500
+  "vim.timeout": 500,
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "path": "C:\\Program Files\\Git\\bin\\bash.exe",
+      "args": ["--login", "-i"]
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "chat.viewSessions.orientation": "stacked"
+}
