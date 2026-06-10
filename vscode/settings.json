@@ -50,26 +50,8 @@
       "after": ["N", "z", "z", "z", "v"]
     }
   ],
-  // Equivalent to: set timeoutlen=500
-  "vim.timeout": 500,
-  "terminal.integrated.profiles.windows": {
-    "PowerShell": {
-      "source": "PowerShell",
-      "icon": "terminal-powershell"
-    },
-    "Command Prompt": {
-      "path": [
-        "${env:windir}\\Sysnative\\cmd.exe",
-        "${env:windir}\\System32\\cmd.exe"
-      ],
-      "args": [],
-      "icon": "terminal-cmd"
-    },
-    "Git Bash": {
-      "path": "C:\\Program Files\\Git\\bin\\bash.exe",
-      "args": ["--login", "-i"]
-    }
-  },
+  // Equivalent to: set timeoutlen=300
+  "vim.timeout": 300,
   "terminal.integrated.defaultProfile.windows": "Git Bash",
   "chat.viewSessions.orientation": "stacked"
 }
