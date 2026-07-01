@@ -2,7 +2,7 @@
 set relativenumber
 set number
 
-" Equivalent to VS Code Vim timeout: 300
+" Vim timeout: 300
 set timeoutlen=300
 
 " jk -> Esc in insert mode
