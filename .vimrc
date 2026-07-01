@@ -18,3 +18,6 @@ nnoremap <C-u> <C-u>zz
 " Center cursor after search navigation
 nnoremap n nzzzv
 nnoremap N Nzzzv
+
+" Sets Ctrl+R (redo) to U, allowing IDEs to use CTRL+R for renaming references
+nnoremap U <C-r>

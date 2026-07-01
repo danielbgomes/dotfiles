@@ -10,7 +10,7 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  // Enable Vim to control Ctrl+C
+  // Disable keys
   "vim.handleKeys": {
     "<C-p>": false,
     "<C-w>": false,
@@ -48,6 +48,11 @@
     {
       "before": ["N"],
       "after": ["N", "z", "z", "z", "v"]
+    },
+    // Sets Ctrl+R (redo) to U, allowing IDEs to use CTRL+R for renaming references
+    {
+      "before": ["U"],
+      "after": ["<C-r>"]
     }
   ],
   // Equivalent to: set timeoutlen=300
